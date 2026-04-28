@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>symbiote — stack smarter, together</title>
+  <meta name="description" content="A research-first peptide community. Log what you took, see what worked for people like you. Free, forever. Currently in private beta — join the waitlist.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght,SOFT@9..144,300..900,30..100&family=Source+Serif+4:opsz,wght@8..60,300..700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --cream: #FBF7F2;
+      --cream-2: #F4EEE3;
+      --lavender: #D6C9FC;
+      --lavender-2: #C7B6FF;
+      --lilac: #F1DFFF;
+      --peach: #FFE3D1;
+      --ink: #1A1530;
+      --ink-soft: #4A4170;
+      --ink-mute: #8A82A8;
+      --rule: rgba(26, 21, 48, 0.10);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 17px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      font-feature-settings: "liga", "kern";
+    }
+    .display {
+      font-family: "Fraunces", Georgia, serif;
+      font-variation-settings: "SOFT" 100, "opsz" 144;
+      letter-spacing: -0.02em;
+    }
+    .mono {
+      font-family: "DM Mono", ui-monospace, monospace;
+      font-size: 11px;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+    }
+    .wordmark {
+      font-family: "Rethink Sans", system-ui, sans-serif;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+    }
+    a { color: inherit; }
+    button { font-family: inherit; cursor: pointer; }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        transition-duration: 0.001ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="application/json" id="tweak-defaults">
+  /*EDITMODE-BEGIN*/{
+    "mood": "soft",
+    "wash": "lavender",
+    "chemGuyTreatment": "outline"
+  }/*EDITMODE-END*/
+  </script>
+
+  <script type="application/json" id="speaker-notes">
+  []
+  </script>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel" src="chem-guy.jsx"></script>
+  <script type="text/babel" src="hero.jsx"></script>
+  <script type="text/babel" src="product.jsx"></script>
+  <script type="text/babel" src="why.jsx"></script>
+  <script type="text/babel" src="waitlist.jsx"></script>
+  <script type="text/babel" src="app.jsx"></script>
+</body>
+</html>
