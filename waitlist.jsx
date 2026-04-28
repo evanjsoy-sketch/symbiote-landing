@@ -14,7 +14,7 @@ const Waitlist = ({ chemGuyTreatment }) => {
     setStatus("sending");
     setErrorMsg("");
     try {
-      const res = await fetch(`${SUPABASE_URL}/rest/v1/waitlists`, {
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/waitlist`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
